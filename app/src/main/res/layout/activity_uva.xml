@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Uva">
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="699dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_marginTop="20dp"
+            android:text="Captura de uva"
+            android:textAlignment="center"
+            android:textColor="#1341c1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_variedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="10dp"
+                android:hint="Variedad de uva" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_temperatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="10dp"
+                android:hint="Temperatura a la entrega" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_cosecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="10dp"
+                android:hint="Fecha de cosecha: dd/mm/aaaa" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_marginTop="30dp"
+                android:text="Favor de entregar 100 - 200g en bolsa plástica."
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textAlignment="center"
+                android:textColor="#1341c1"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_capturar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:onClick="Siguiente"
+            android:text="Enviar con foto" />
+
+        <Button
+            android:id="@+id/btn_sin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:text="Enviar sin foto" />
+
+        <Button
+            android:id="@+id/btn_regresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:onClick="Regresar"
+            android:text="Regresar" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
